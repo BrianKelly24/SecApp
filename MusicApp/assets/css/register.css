@@ -1,0 +1,178 @@
+/* this makes the background image fit the full screen */
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#background {   /* use # to reference id's*/
+    background-color: #000;
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+/* star means all */
+#loginContainer * {
+    color: #FFF;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1024px;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    rgba(213, 224, 255, 0.973);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    rgba(213, 224, 255, 0.973);
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:     rgba(213, 224, 255, 0.973);
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:     rgba(213, 224, 255, 0.973);
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:     rgba(213, 224, 255, 0.973);
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:     rgba(213, 224, 255, 0.973);
+}
+
+#inputContainer {
+    width:365px;
+    padding: 45px;
+    float: left;
+    border-right: 1px solid #999;
+}
+
+#loginForm h4{
+    text-align: center;
+    
+}
+
+#inputContainer h2 {
+    text-align: center;
+
+}
+
+/* using input type text, email and password inputs stated on the html on register page will be given the below css styling  */
+#inputContainer input[type="text"], 
+#inputContainer input[type="email"],
+#inputContainer input[type="password"]{
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#inputContainer label{
+    color: #c0c0c0;
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+}
+
+#inputContainer button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    height: 41px;
+    width: 100%;
+   
+}
+
+#inputContainer button:hover {
+    cursor: pointer;
+}
+
+/* classes uses a .  */
+#hasAccountText span {
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.hasAccountText {
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* stops login or register glitching when you click a link */
+#registerForm,
+#loginForm {
+    display: none;   
+}
+
+#loginText {
+    padding: 45px;
+    display: table-cell;
+}
+
+#loginText h1 {
+    color: #07d159;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#loginText h2 {
+    margin: 32px 10;
+}
+
+#loginText ul {
+    padding: 5px;
+}
+
+#loginText li {
+    font-size: 20px;
+    list-style-type: none;
+    padding: 4px 32px 14px;
+    background: url(../images/icons/checkmark.png) no-repeat;
+}
+
+#inputContainer .errorMessage {
+    color: #07d159;
+    font-size: 12px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
